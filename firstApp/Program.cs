@@ -17,7 +17,12 @@ namespace firstApp
             Console.Write("Roses are "+color);
             Console.Write(plurnoun + " are blue ");
             Console.Write("I Love " +celebarty);
+            End();
             Console.ReadLine();
+        }
+        static void End()
+        {
+            Console.WriteLine("you understand!!");
         }
     }
 }
