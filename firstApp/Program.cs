@@ -6,23 +6,34 @@ namespace firstApp
     {
         static void Main(string[] args)
         {
-            string color, plurnoun, celebarty;
-            Console.Write("Enter the color : ");
-            color = Console.ReadLine();
-            Console.Write("Enter the plurnoun : ");
-            plurnoun = Console.ReadLine();
-            Console.Write("Enter the celebarty : ");
-            celebarty = Console.ReadLine();
+            string secretWord = "Madrid";
+            string guessWord = "";
+            int counter =0;
+            int guessTray = 3;
+            bool outOfGuesses = false;
 
-            Console.Write("Roses are "+color);
-            Console.Write(plurnoun + " are blue ");
-            Console.Write("I Love " +celebarty);
-            End();
+            while (secretWord != guessWord && !outOfGuesses)
+            {
+                if(counter < guessTray)
+                {
+                    Console.Write("Enter your guess please : ");
+                    guessWord = Console.ReadLine();
+                    counter++ ;
+                }
+                else
+                {
+                    outOfGuesses = true;
+                }
+            }
+            if (outOfGuesses)
+            {
+                Console.Write("You Lose !!")
+            }
+            else
+            {
+                Console.Write("YOU WIN Bravoooooooo")
+            }
             Console.ReadLine();
-        }
-        static void End()
-        {
-            Console.WriteLine("you understand!!");
         }
     }
 }
