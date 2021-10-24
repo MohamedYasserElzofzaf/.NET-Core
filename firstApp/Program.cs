@@ -27,11 +27,11 @@ namespace firstApp
             }
             if (outOfGuesses)
             {
-                Console.Write("You Lose !!")
+                Console.Write("You Lose !!");
             }
             else
             {
-                Console.Write("YOU WIN Bravoooooooo")
+                Console.Write("YOU WIN Bravoooooooo");
             }
             Console.ReadLine();
         }
