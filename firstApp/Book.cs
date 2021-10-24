@@ -10,13 +10,27 @@ namespace firstApp
     {
         public string title;
         public string author;
-        public int pages;
+        private int pages;
 
         public Book(string aTitle , string aAuthor , int aPages)
         {
             title = aTitle;
             author = aAuthor;
-            pages = aPages;
+            Pages = aPages;
+        }
+        public int Pages
+        {
+            get { return pages; }
+            set {
+                    if(value > 5)
+                {
+                    pages = value;
+                }
+                else
+                {
+                    pages = 10;
+                }
+                }
         }
     }
 }
