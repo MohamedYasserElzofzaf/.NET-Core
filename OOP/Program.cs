@@ -6,8 +6,8 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            Number n1 = new Number();
-            Console.WriteLine(n1.x1);
+            Number obj1 = new Number(10,20);
+            Console.WriteLine(obj1.sub());
             Console.ReadLine();
         }
     }
