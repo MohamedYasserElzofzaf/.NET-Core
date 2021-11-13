@@ -6,8 +6,11 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            Number obj1 = new Number(10,20);
-            Console.WriteLine(obj1.sub());
+            Human h = new Human();
+            h.setId(123);
+            h.setName("Mohamed Yasser");
+            h.show_data();
+            Console.WriteLine();
             Console.ReadLine();
         }
     }
